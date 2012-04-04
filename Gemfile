@@ -1,10 +1,9 @@
-source 'https://rubygems.org'
+source :rubygems
 
 gem 'unicorn', '~> 4.2.0'
-gem 'rack-cache', '~> 1.1.0', :require => 'rack/cache'
-gem 'schnitzelpress', '~> 0.1.1'
+gem 'schnitzelpress', :git => 'git://github.com/hmans/schnitzelpress.git'
 
 group :development do
-  gem 'shotgun', '~> 0.9.0'
-  gem 'heroku', '~> 2.20.0'
+  gem 'shotgun'
+  gem 'heroku'
 end
